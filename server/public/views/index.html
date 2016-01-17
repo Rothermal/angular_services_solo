@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="thetaApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Ten Things About Theta</title>
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+</head>
+<body ng-controller="MainController">
+<p>We Are {{test.theta.name}} Cohort</p>
+<p>There are {{test.theta.numStudents}} of Us</p>
+<p>Our Mascot is the mighty {{test.theta.spiritAnimal}}</p>
+<p>We all Attend {{test.theta.School}}</p>
+<p>It is located in the city of  {{test.theta.location.city}}, {{test.theta.location.state}}</p>
+<p>We are learning programming languages like {{test.theta.language()}}</p>
+<p>This is the Greek symbol for theta <span ng-bind-html="symbol"></span></p>
+<p>I would love to tell you more about Theta but {{test.theta.TakingShortcuts}}</p>
+<p>There are {{test.theta.stuff[0]}} that I would love to discuss but all i can come up with is {{test.theta.stuff[1]}} and {{test.theta.stuff[2]}}</p>
+</body>
+
+</html>
